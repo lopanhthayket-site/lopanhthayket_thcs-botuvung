@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Từ vựng THPT</title>
+<title>Khoá THCS - Lớp Anh thầy Kết</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
   body {
@@ -15,64 +15,62 @@
   }
 
   header {
-    background-color: #ffd6ba;
-    color: #7a4e3e;
-    padding: 30px 20px 45px;
-    font-size: 32px;
+    background-color: #EA7B7B; /* pastel cam nhạt */
+    color: #FCF8F8;
+    padding: 40px 20px;
+    font-size: 36px;
     font-weight: bold;
-    position: relative;
   }
 
-  /* Icon Home */
-  .home-link {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    font-size: 28px;
-    color: #7a4e3e;
+  .button-container {
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+  }
+
+  .nav-button {
+    background-color: #a0e7e5; /* pastel xanh nhạt */
+    color: #3a3a3a;
+    border: none;
+    padding: 20px 25px;
+    font-size: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
     text-decoration: none;
-    transition: transform 0.2s, color 0.2s;
+    flex: 1 1 200px;
+    max-width: 220px;
   }
 
-  .home-link:hover {
-    color: #ffb3ba;
-    transform: scale(1.15);
+  .nav-button:hover {
+    background-color: #ffb3ba; /* pastel hồng nhạt khi hover */
+    transform: translateY(-3px);
   }
 
-  .toc-container {
-    margin: 40px auto;
-    max-width: 1100px;
-    padding: 20px;
+  .social-section {
+    margin-top: 60px;
   }
 
-  .toc-title {
-    font-size: 28px;
+  .social-section h2 {
+    font-size: 24px;
     color: #7a4e3e;
     margin-bottom: 20px;
-    font-weight: bold;
   }
 
-  .toc-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
+  .social-icons a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 40px;
+    color: #a0e7e5; /* pastel xanh nhạt */
+    transition: color 0.3s, transform 0.2s;
   }
 
-  .toc-item {
-    background-color: #a0e7e5;
-    padding: 15px;
-    border-radius: 12px;
-    font-size: 20px;
-    color: #3a3a3a;
-    cursor: pointer;
-    transition: transform 0.25s, background-color 0.25s;
-    text-decoration: none;
-    display: block;
-  }
-
-  .toc-item:hover {
-    background-color: #ffb3ba;
-    transform: translateY(-3px);
+  .social-icons a:hover {
+    color: #ffb3ba; /* pastel hồng nhạt khi hover */
+    transform: translateY(-5px);
   }
 
   footer {
@@ -83,18 +81,17 @@
     background-color: #fff0e1;
   }
 
-  @media (max-width: 900px) {
-    .toc-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
   @media (max-width: 600px) {
-    .toc-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .toc-item {
+    .nav-button {
+      flex: 1 1 100%;
+      max-width: 90%;
       font-size: 18px;
+      padding: 15px 10px;
+    }
+
+    .social-icons a {
+      font-size: 35px;
+      margin: 0 10px;
     }
   }
 </style>
@@ -102,60 +99,34 @@
 <body>
 
 <header>
-  <a href="https://lopanhthayket-site.github.io/lopanhthayket_thcs/" class="home-link" title="Về trang chủ">
-    <i class="fas fa-home"></i>
-  </a>
-  Bộ Từ vựng luyện thi
+  Lớp Anh thầy Kết - Luyện thi THCS
 </header>
 
-<div class="toc-container">
-  <div class="toc-title">Các bộ từ vựng theo chủ đề</div>
-  <div class="toc-grid">
+<div class="button-container">
+  <a href="https://lopanhthayket-site.github.io/baihockhoatongon/" class="nav-button">Bài học Khoá Tổng ôn</a>
+  <a href="https://lopanhthayket-site.github.io/Tracnghiemgrammar/" class="nav-button">Trắc nghiệm Grammar</a>
+  <a href="https://lopanhthayket-site.github.io/TracnghiemTuvung/" class="nav-button">Trắc nghiệm Từ vựng</a>
+  <a href="https://lopanhthayket-site.github.io/ChiaDongtu/" class="nav-button">Chia Động từ</a>
+  <a href="https://lopanhthayket-site.github.io/ChiaTuLoai/" class="nav-button">Chia từ loại</a>
+  <a href="https://lopanhthayket-site.github.io/Docdien/" class="nav-button">Đọc điền Đoạn văn</a>
+  <a href="https://lopanhthayket-site.github.io/Dochieu/" class="nav-button">Đọc hiểu Đoạn văn</a>
+  <a href="https://lopanhthayket-site.github.io/Thongbao/" class="nav-button">Nối thông báo</a>
+  <a href="https://lopanhthayket-site.github.io/Sapxepcau/" class="nav-button">Sắp xếp câu</a>
+  <a href="https://lopanhthayket-site.github.io/Vietlaicau/" class="nav-button">Viết lại câu</a>
+  <a href="#" class="nav-button">Tìm từ gợi ý (tham khảo)</a>
+  <a href="#" class="nav-button">Đọc hiểu email (tham khảo)</a>
+  <a href="https://lopanhthayket-site.github.io/Thithu/" class="nav-button">Thi thử</a>
+  <a href="https://lopanhthayket-site.github.io/lopanhthayket_thcs-botuvung/" class="nav-button">Bộ Từ vựng</a>
+  <a href="https://ketng91.github.io/gametuvung/" class="nav-button">Game từ vựng</a> 
+</div>
 
-    <!-- Đổi link theo ý bạn -->
-    <!-- 40 đề mẫu -->
-    <!-- Bạn copy thêm nếu nhiều hơn -->
-    <!-- Block 01-40 -->
-    <!-- Just paste more -->
-    <!-- Start -->
-    <a href="https://lopanhthayket-site.github.io/botuvung-level-A/" class="toc-item">Level A</a>
-    <a href="https://lopanhthayket-site.github.io/botuvung-level-B/" class="toc-item">Level B</a>
-    <a href="https://lopanhthayket-site.github.io/botuvung-Education/" class="toc-item">Education</a>
-    <a href="#" class="toc-item">Family</a>
-    <a href="#" class="toc-item">Friend</a>
-    <a href="#" class="toc-item">Health</a>
-
-    <a href="#" class="toc-item">City</a>
-    <a href="#" class="toc-item">Countryside</a>
-    <a href="#" class="toc-item">Lifestyle</a>
-    <a href="#" class="toc-item">Traveling</a>
-    <a href="#" class="toc-item">Entertainment</a>
-
-    <a href="#" class="toc-item">Pollution</a>
-    <a href="#" class="toc-item">Saving Energy</a>
-    <a href="#" class="toc-item">Natural Disasters</a>
-    <a href="#" class="toc-item">Work</a>
-    <a href="#" class="toc-item">The Internet</a>
-
-    <a href="#" class="toc-item">Mass Media</a>
-    <a href="#" class="toc-item">Inventions</a>
-    <a href="#" class="toc-item">Culture</a>
-    <a href="#" class="toc-item">Culture</a>
-    <a href="#" class="toc-item">Festival</a>
-
-    <a href="#" class="toc-item">Phrasal Verb</a>
-    <a href="#" class="toc-item">Cụm giới từ</a>
-    <a href="#" class="toc-item">Collocation</a>
-    <a href="#" class="toc-item">Idiom</a>
-    <a href="https://lopanhthayket-site.github.io/Cautructhongdung/" class="toc-item">Cấu trúc thông dụng</a>
-    <a href="https://lopanhthayket-site.github.io/Dongtubatquytac/" class="toc-item">Bảng V bất quy tắc</a>
-
-
-
-
-
-    <!-- End -->
-
+<!-- ====== Phần MXH ====== -->
+<div class="social-section">
+  <h2>MXH: Lớp Anh thầy Kết</h2>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/profile.php?id=100095128431844" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+    <a href="https://www.youtube.com/@LopmonAnhthayKet" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.tiktok.com/@lopanhthayket" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
   </div>
 </div>
 
